@@ -8,20 +8,57 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script defer src="script.js"></script>
 </head>
+<body>         
+    <div class="page-container">
+        <div class="upper-box">
+            <h1>Weather (Or Not) App</h1>
+            <ul class="upper-box-items">
+                <li class="upper-box-item">Pick a Location</li>
+                <input type="text" class="upper-box-item" id="city-name-input">
+                 <button class="upper-box-item" id="search-button">Get Weather</button>
+            </ul>
+        </div>
+        <div class="lower-box">
+            <ul class="weather-box" id="weather-box">Choose a location to view the weather.</ul>
+            <ul class="previous-searches-list">
+                <h3>Previous Searches</h3>
+                <li>No previous searches.</li>
+             </ul>
+        </div>
+    </div >
+<main>
+    <article>
+        <h2>Current Weather</h2>
+        <p class="current-weather"></p>
 
-<!-- There is a header that includes:
- 1. The application's title
- 2. a search form with a label, text input, and submit input -->
+          
+        </article>
+        <aside>
+          <h2>Upcoming Weather</h2>
+          <p class="upcoming-weather" id="upcoming-weather"></p>
 
- <header>
-    <h1>Weather (or not) App</h1>
-    <form>
-        <label for="search-input">Search:</label>
-        <input type="text" name="search-input" id="search-input">
-        <input type="submit" value="Submit">
-    </form>
-</header>
-<body>
-    
+          <article>
+            
+          </article>
+          <article>
+            
+          </article>
+          <article>
+            
+          </article>
+        </aside>
+</main>
+
+<aside>
+    <h2>Weather History</h2>
+    <section>
+      <h4>Previous Searches</h4>
+        <ul class="previous-searches-list" id="previous-searches">
+
+        </ul>
+    </section>
+ </aside>
+
+
 </body>
 </html>
