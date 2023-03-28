@@ -82,6 +82,7 @@ li {
     padding: 45px;
     display: grid;
     grid-template-columns: 33% 33% 33%;
+    width:max-content;
     
 }
 
