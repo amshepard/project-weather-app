@@ -5,60 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 </head>
-<body>         
-    <div class="page-container">
-        <div class="upper-box">
-            <h1>Weather (Or Not) App</h1>
-            <ul class="upper-box-items">
-                <li class="upper-box-item">Pick a Location</li>
-                <input type="text" class="upper-box-item" id="city-name-input">
-                 <button class="upper-box-item" id="search-button">Get Weather</button>
-            </ul>
+    <body>
+        <div class="main-box">
+
+            <div class="upper-box">
+                <h1>Crayola Weather App</h1>
+                <ul class="upper-box-items">
+                    <li class="box-item">Pick a Location</li>
+                    <input type="text" class="box-item" id="city-name-input">
+                    <button class="box-item" id="search-button">Get Ya Weather Here</button>
+                </ul>
+            </div>
+
+            <div class="lower-box">
+                <div class="weather-box" id="weather-box">Choose a location to view the weather.</div>
+                <ul class="previous-searches-list">
+                    <h3>Previous Searches</h3>
+                    <li>No previous searches.</li>
+                </ul>
+            </div>
         </div>
-        <div class="lower-box">
-            <ul class="weather-box" id="weather-box">Choose a location to view the weather.</ul>
-            <ul class="previous-searches-list">
-                <h3>Previous Searches</h3>
-                <li>No previous searches.</li>
-             </ul>
+
+        <!-- <div class="gif-box" id="gif-box"></div> -->
+
+        <div class="third-box" id="third-box">
+                <div>
+                    <article class="third-box-element" id="today"><h3>Today</h3></article>
+                </div>
+                <div>
+                    <article class="third-box-element" id="tomorrow"><h3>Tomorrow</h3></article>
+                </div>
+                <div>
+                    <article class="third-box-element" id="day-after-tomorrow"><h3>Day After Tomorrow</h3></article>
+                </div>  
         </div>
-    </div >
-<main>
-    <article>
-        <h2>Current Weather</h2>
-        <p class="current-weather"></p>
-
-          
-        </article>
-        <aside>
-          <h2>Upcoming Weather</h2>
-          <p class="upcoming-weather" id="upcoming-weather"></p>
-
-          <article>
-            
-          </article>
-          <article>
-            
-          </article>
-          <article>
-            
-          </article>
-        </aside>
-</main>
-
-<aside>
-    <h2>Weather History</h2>
-    <section>
-      <h4>Previous Searches</h4>
-        <ul class="previous-searches-list" id="previous-searches">
-
-        </ul>
-    </section>
- </aside>
-
-
-</body>
+    </body>
 </html>

@@ -1,56 +1,79 @@
-main {
-    grid-area: main;
-  }
+body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Arimo', sans-serif;
+    /* background-image: url("https://i.gifer.com/origin/7e/7e31faa0b302c2106e5d46044f087540.gif"); */
+}
+
+li {
+    list-style:none;
+}
+
+.main-box {
+    border: 3px solid forestgreen;
+    border-radius: 60px; 
+    width: 67.5%;
+    /* background-image: url("https://i.gifer.com/origin/7e/7e31faa0b302c2106e5d46044f087540.gif"); */
+}
 
 .upper-box {
     align-items: center;
-    background-image: url("https://i.gifer.com/origin/7e/7e31faa0b302c2106e5d46044f087540.gif");
-    background-size: cover; 
-    border: 5px solid #fc0101;
-    color: lightgray;
+    border: 3px solid blue;
     display: flex;
     flex-direction: column;
-    max-width: 60%;
-    max-height: 60%; 
-    margin: 0 auto; 
+}
+
+.box-item {
+    margin: 10px;
 }
 
 .upper-box-items {
-    align-items: center;
     display: flex;
+    border: 3px solid orange;
     flex-direction: row;
-    justify-content: center;
-}
-
-.upper-box-item {
-    margin: 8px;
-    background-color: red;
-    color: white;
 }
 
 .lower-box {
-    border: 3px solid I#666;
+    border: 3px solid teal;
     display: grid;
-    grid-template-columns: 70% 30%;
-    grid-template-rows: auto;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 10px;
-    width: 100%; 
+    grid-template-columns: 65% 35%;
 }
 
 .weather-box {
     align-items: center;
+    border: 3px solid purple;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     padding: 16px;
-    width: 100%;
+    justify-content: center;
 }
 
-.weather-box-item {
-    margin: 8px;
+.previous-searches-list {
+    border: 3px solid green;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    justify-content: center;
 }
 
+/* .gif-box {
+    display: flex;
+    height: 200px; 
+    background-image: url("https://i.gifer.com/origin/7e/7e31faa0b302c2106e5d46044f087540.gif");
+    background-size: cover; 
+    background-position: center; 
+} */
 
+.third-box {
+    border: 3px solid aquamarine;
+    padding: 25px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    width: 60%
+}
 
+.third-box-element h3 {
+    text-decoration: underline;
+    font-weight: bold;
+}
