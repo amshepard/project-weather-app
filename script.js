@@ -69,6 +69,21 @@ const fillWeatherBox = (json, cityName) => {
     tomorrowElement.innerHTML = `Tomorrow <br><br><strong>Avg Temperature:</strong> ${avgTemperatureTomorrow}°F <strong>|</strong> ${avgTemperatureTomorrowC}°C <br><br> <strong>Max Temperature:</strong> ${maxTemperatureTomorrow}°F <strong>|</strong> ${maxTemperatureTomorrowC}°C <br><br>  <strong>Min Temperature:</strong> ${minTemperatureTomorrow}°F <strong>|</strong> ${minTemperatureTomorrowC}°C`
    
     dayAfterTomorrowElement.innerHTML = `Day After Tomorrow <br><br><strong>Avg Temperature:</strong> ${avgTemperatureTwoDaysOut}°F <strong>|</strong> ${avgTemperatureTwoDaysOutC}°C <br><br> <strong>Max Temperature:</strong> ${maxTemperatureTwoDaysOut}°F <strong>|</strong> ${maxTemperatureTwoDaysOutC} <br><br>  <strong>Min Temperature:</strong> ${minTemperatureTwoDaysOut}°F <strong>|</strong> ${minTemperatureTwoDaysOutC}`
+
+
+
+const addPreviousSearch = (cityName, temperature) => {
+    let previousSearchesList = document.querySelector(".previous-searches-list")
+    let updatePrevious = document.createElement("li")
+    updatePrevious.textContent = `${cityName} - Feels like ${temperature}°F`
+    previousSearchesList.append(updatePrevious)
+    let noPreviousSearches = document.querySelector(".no-previous-searches")
+    if(noPreviousSearches){
+        noPreviousSearches.remove()
+    }
+}
+
+addPreviousSearch(cityName, temperatureValue)
    
 }
 
