@@ -81,8 +81,8 @@ li {
     border-radius: 60px;
     padding: 45px;
     display: grid;
-    grid-template-columns: 20% 20% 20%;
-    width: 60%
+    grid-template-columns: 33% 33% 33%;
+    width: 75%
 }
 
 .third-box-element h3 {
