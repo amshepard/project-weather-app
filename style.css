@@ -11,8 +11,9 @@ li {
 }
 
 .main-box {
-    border: 3px solid forestgreen;
+    border: 3px solid rgb(234, 255, 0);
     border-radius: 60px; 
+    padding: 20px
     width: 67.5%;
     /* background-image: url("https://i.gifer.com/origin/7e/7e31faa0b302c2106e5d46044f087540.gif"); */
 }
@@ -20,6 +21,7 @@ li {
 .upper-box {
     align-items: center;
     border: 3px solid blue;
+    border-radius: 60px;
     display: flex;
     flex-direction: column;
 }
@@ -30,12 +32,14 @@ li {
 
 .upper-box-items {
     display: flex;
-    border: 3px solid orange;
+    border: 3px solid red;
+    border-radius: 30px;
     flex-direction: row;
 }
 
 .lower-box {
     border: 3px solid teal;
+    border-radius: 60px;
     display: grid;
     grid-template-columns: 65% 35%;
 }
@@ -47,27 +51,35 @@ li {
     flex-direction: column;
     padding: 16px;
     justify-content: center;
+    border-radius: 60px;
 }
 
 .previous-searches-list {
     border: 3px solid green;
+    border-radius: 60px;
     display: flex;
     flex-direction: column;
     padding: 16px;
     justify-content: center;
 }
 
+
+
 /* .gif-box {
     display: flex;
-    height: 200px; 
-    background-image: url("https://i.gifer.com/origin/7e/7e31faa0b302c2106e5d46044f087540.gif");
-    background-size: cover; 
-    background-position: center; 
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+.gif-box img {
+    max-width: 100%;
 } */
+
 
 .third-box {
     border: 3px solid aquamarine;
-    padding: 25px;
+    border-radius: 60px;
+    padding: 45px;
     display: grid;
     grid-template-columns: 33% 33% 33%;
     width: 60%

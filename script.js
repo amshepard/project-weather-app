@@ -103,3 +103,53 @@ if (searchButton) {
       })
     })
 }
+
+//makes the enter key a functional input
+if (cityNameInput) {
+  cityNameInput.addEventListener("keypress", (event) => {
+      if (event.key === "Enter") {
+          let cityName = cityNameInput.value;
+          cityNameInput.value = "";
+
+          let receivedPromise = fetch(`https://wttr.in/${cityName}?format=j1`);
+
+          receivedPromise.then((response) => {
+              return response.json();
+          }).then((json) => {
+              fillWeatherBox(json, cityName);
+          }).catch((error) => {
+              console.error(error);
+          });
+      }
+  });
+}
+
+// change the colors of the h1 on each page load
+const randomColor = () => {
+  let color = '#'
+  for (let i = 0; i < 6; i++) {
+    color += Math.floor(Math.random() * 16).toString(16)
+  }
+  return color
+}
+
+window.addEventListener('load', () => {
+  let h1 = document.querySelector('.upper-box h1')
+  let letters = h1.textContent.split('')
+  h1.innerHTML = ''
+  letters.forEach(letter => {
+    let span = document.createElement('span')
+    span.textContent = letter
+    span.style.color = randomColor()
+    h1.append(span)
+  })
+})
+
+// Only first letter of city input is capitalized and the rest of the letters are lowercase
+cityNameInput.addEventListener('change', () => {
+  let cityName = cityNameInput.value.toLowerCase()
+  cityName = cityName.charAt(0).toUpperCase() + cityName.slice(1)
+  cityNameInput.value = cityName
+})
+
+
